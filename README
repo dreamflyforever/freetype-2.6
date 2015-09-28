@@ -1,9 +1,9 @@
- * mips cross compile  
- ./configure --prefix=/opt/include --host=mipsel-linux  
- if error in src/gzip/ftgzip.c:50:18: fatal error: zlib.h: No such file or directory  
+#mips cross compile  
+* ./configure --host=mipsel-linux  --disable-mmap --with-bzip2=no --with-png=no --with-harfbuzz=no --with-old-mac-fonts=0 --with-fsspec=no --with-fsref=no
+* make  
+if error in src/gzip/ftgzip.c:50:18: fatal error: zlib.h: No such file or directory  
 just modify the zlib.h path where you download the libz source.  
-if error in /opt/mipsel-gcc472-glibc216-mips32/bin/../lib/gcc/mips-linux-gnu/4.7.2/../../../../mips-linux-gnu/bin/ld: cannot find -lpng12
-add you lpng12 lib in the path such like -L/path_libpng.so
+* mipsel-linux-strip libfreetype.so
 
   FreeType 2.6
   ============

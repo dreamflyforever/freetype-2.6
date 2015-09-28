@@ -133,7 +133,7 @@ FT_BEGIN_HEADER
   /* Note that if your compiler or CPU is not supported, this will default */
   /* to the standard and portable implementation found in `ftcalc.c'.      */
   /*                                                                       */
-#define FT_CONFIG_OPTION_INLINE_MULFIX
+#undef FT_CONFIG_OPTION_INLINE_MULFIX
 
 
   /*************************************************************************/
@@ -148,7 +148,7 @@ FT_BEGIN_HEADER
   /*                                                                       */
   /*   Define this macro if you want to enable this `feature'.             */
   /*                                                                       */
-#define FT_CONFIG_OPTION_USE_LZW
+#undef FT_CONFIG_OPTION_USE_LZW
 
 
   /*************************************************************************/
@@ -163,7 +163,7 @@ FT_BEGIN_HEADER
   /*   Define this macro if you want to enable this `feature'.  See also   */
   /*   the macro FT_CONFIG_OPTION_SYSTEM_ZLIB below.                       */
   /*                                                                       */
-#define FT_CONFIG_OPTION_USE_ZLIB
+#undef FT_CONFIG_OPTION_USE_ZLIB
 
 
   /*************************************************************************/
